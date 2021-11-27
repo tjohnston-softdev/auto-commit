@@ -1,8 +1,8 @@
 name: Autocommit
 on:
   schedule:
-    # Each day at 03:00 UTC
-    - cron:  '0 3 * * *'
+    # Each day at 12:00 UTC
+    - cron:  '0 12 * * *'
 jobs:
   commit-job:
     runs-on: ubuntu-latest
