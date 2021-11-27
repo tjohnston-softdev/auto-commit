@@ -1,6 +1,7 @@
 name: Autocommit
 on:
   schedule:
+    # Each day at 03:00 UTC
     - cron:  '0 3 * * *'
 jobs:
   commit-job:
