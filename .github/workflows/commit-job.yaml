@@ -1,0 +1,19 @@
+name: Autocommit
+on: workflow_dispatch
+jobs:
+  commit-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Download Repository"
+        uses: actions/checkout@v2
+        with:
+            token: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: "Update Repository"
+        run: |
+          date > ./timestamp.txt
+          TODAY=$(date +"%Y-%m-%d")
+          git config --local user.email = "actions@github.com"
+          git config --local user.name = "GitHub Actions"
+          git add .
+          git commit -m "$TODAY"
+          git push origin master
