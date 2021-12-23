@@ -26,9 +26,12 @@ on:
 \
 The schedule code has been backed up to a [separate text file](./.github/workflows/cron.txt) for convenience.
 
+You must supply your own [GitHub access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) in order to use this script. It is attatched to the repository as an [encrypted secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets) under the name `REPO_ACCESS_TOKEN`
+
 
 ---
 
 ## Disclaimer
 
 The contents of this repository are licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). You can do whatever you want with it.
+
