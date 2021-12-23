@@ -34,4 +34,3 @@ You must supply your own [GitHub access token](https://docs.github.com/en/authen
 ## Disclaimer
 
 The contents of this repository are licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). You can do whatever you want with it.
-
