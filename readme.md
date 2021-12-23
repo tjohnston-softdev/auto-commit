@@ -2,7 +2,7 @@
 
 This is a script for GitHub actions which, when enabled, automatically makes a commit to the repository every day at around 12PM UTC. It was active from 27 November to 20 December 2021. By then, I decided to disable the script because three and a half weeks is more than enough time to demonstrate how daily automation works. I have made this public so that it can be used as a reference.
 
-
+---
 
 ## Running
 
@@ -27,6 +27,7 @@ on:
 The schedule code has been backed up to a [separate text file](./.github/workflows/cron.txt) for convenience.
 
 
+---
 
 ## Disclaimer
 
